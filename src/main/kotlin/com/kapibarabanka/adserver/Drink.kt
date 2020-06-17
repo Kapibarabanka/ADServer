@@ -1,4 +1,4 @@
 package com.kapibarabanka.adserver
 
-class Drink (val id: Int, val name: String, val rating: Float, val type: Int, val comment: String) {
+class Drink (val id: Int, val name: String, val type: Int, val rating: Float, val comment: String) {
 }

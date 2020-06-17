@@ -53,10 +53,10 @@ class Controller {
         while (rs.next()) {
             val id = rs.getInt("id")
             val name = rs.getString("name")
+			val type = rs.getInt("type")
             val rating = rs.getFloat("rating")
-            val type = rs.getInt("type")
             val comment = rs.getString("comment")
-            output.add(Drink(id, name, rating, type, comment))
+            output.add(Drink(id, name, type, rating, comment))
         }
 
         return output
