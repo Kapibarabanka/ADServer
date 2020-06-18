@@ -1,4 +1,4 @@
 package com.kapibarabanka.adserver
 
-class DrinkInEvent(val pairId: Int, val eventId: Int, val drinkId: Int, val amount: Float) {
-}
+data class DrinkInEvent(val id: Long, val eventId: Long, val drinkId: Long, val amount: Float,
+                   val user: String, val lastUpdate: Long, val state: String)

@@ -1,4 +1,4 @@
 package com.kapibarabanka.adserver
 
-class DrinkType(val id: Int, val name: String, val minAlco: Float, val maxAlco: Float) {
-}
+data class DrinkType(val id: Long, val name: String, val minAlco: Float, val maxAlco: Float, val icon: Int,
+                     val user: String, val lastUpdate: Long, val state: String)
